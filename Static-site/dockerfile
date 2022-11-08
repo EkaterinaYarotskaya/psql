@@ -1,0 +1,5 @@
+FROM nginx
+MAINTAINER kate
+ADD . /root
+RUN make root
+CMD ["echo", "Welcome to WebDad Upgrade"]
